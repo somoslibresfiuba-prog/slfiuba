@@ -3,179 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somos Libres - FIUBA</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="styles.css">
+    <title>Somos Libres - FIUBA | El Fin de la Decadencia</title>
+    <link rel="icon" type="image/png" href="favicon.png?v=2">
+    <link rel="stylesheet" href="styles.css?v=2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-   <nav class="navbar">
+    <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                SOMOS LIBRES
+                <img src="logo.png?v=2" alt="Somos Libres Logo">
+                <span>SOMOS LIBRES</span>
             </div>
             
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
 
             <ul class="nav-links">
-                <li><a href="#agenda">Agenda Visitas</a></li>
-                <li><a href="#apoyo">Clases Apoyo</a></li>
+                <li><a href="#agenda">Agenda Liberal</a></li>
                 <li><a href="#propuestas">Propuestas</a></li>
+                <li><a href="#apoyo">Clases</a></li>
                 <li><a href="#equipo">Equipo</a></li>
-                <li><a href="https://wa.me/XXXXXXXX" class="btn btn-primary btn-nav">Sumate</a></li>
+                <li><a href="https://wa.me/54911XXXXXXXX" class="btn btn-primary btn-nav">SUMATE AHORA</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="hero">
-        <div class="container">
+        <div class="overlay"></div>
+        <div class="container hero-content">
+            <span class="badge">UNA FIUBA DISTINTA ES POSIBLE</span>
             <h1>LIBERTAD, MÉRITO Y <br><span class="highlight">FUTURO PROFESIONAL</span></h1>
-            <p>Queremos un Centro de Estudiantes que te conecte con el mercado laboral, no con la política partidaria.</p>
-            <a href="#agenda" class="btn btn-primary">Ver Visitas a Empresas</a>
-            <a href="#propuestas" class="btn btn-outline">Nuestras Propuestas</a>
+            <p>Se terminó la casta en el Centro de Estudiantes. Venimos a conectar la facultad con el mundo real, las empresas y la tecnología.</p>
+            <div class="hero-btns">
+                <a href="#agenda" class="btn btn-primary">VER VISITAS A EMPRESAS</a>
+                <a href="#propuestas" class="btn btn-outline">NUESTRAS IDEAS</a>
+            </div>
         </div>
     </header>
 
     <section id="agenda" class="section">
         <div class="container">
-            <h2 class="section-title">Agenda 2026: Conexión Real</h2>
-            <p class="text-center">Te llevamos a donde vas a trabajar mañana. Charlas y visitas técnicas confirmadas.</p>
+            <h2 class="section-title">AGENDA 2026: VINCULACIÓN PRIVADA</h2>
+            <p class="text-center subtitle">Mientras otros pegan carteles, nosotros te llevamos a las empresas Top.</p>
             
-            <div style="overflow-x:auto;">
+            <div class="table-wrapper">
                 <table class="agenda-table">
                     <thead>
                         <tr>
-                            <th>Mes</th>
-                            <th>Charla Técnica</th>
-                            <th>Visita a Planta/Obra</th>
+                            <th>MES</th>
+                            <th>CHARLA TÉCNICA</th>
+                            <th>VISITA AL PRIVADO</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Marzo</strong></td>
-                            <td>Inteligencia Artificial</td>
-                            <td><strong>Toyota</strong></td>
+                            <td><strong>MARZO</strong></td>
+                            <td>Inteligencia Artificial & Data</td>
+                            <td><span class="tag-yellow">TOYOTA</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Abril</strong></td>
+                            <td><strong>ABRIL</strong></td>
                             <td>YPF (Horacio Marín)</td>
-                            <td><strong>Ford</strong></td>
+                            <td><span class="tag-yellow">FORD</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Mayo</strong></td>
-                            <td>Minería en Catamarca</td>
-                            <td><strong>INVAP</strong></td>
+                            <td><strong>MAYO</strong></td>
+                            <td>Minería (Catamarca)</td>
+                            <td><span class="tag-yellow">INVAP</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Junio</strong></td>
+                            <td><strong>JUNIO</strong></td>
                             <td>Centros de Datos</td>
-                            <td><strong>Mercado Libre</strong></td>
+                            <td><span class="tag-yellow">MERCADO LIBRE</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Julio</strong></td>
+                            <td><strong>JULIO</strong></td>
                             <td>Offshore Mar del Plata</td>
-                            <td><strong>Globant</strong></td>
+                            <td><span class="tag-yellow">GLOBANT</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Agosto</strong></td>
+                            <td><strong>AGOSTO</strong></td>
                             <td>Obras Privadas</td>
-                            <td><strong>Visitas a Obras Civiles</strong></td>
+                            <td><span class="tag-yellow">OBRAS CIVILES</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="text-center" style="margin-top: 20px; font-size: 0.9rem;">*Cronograma sujeto a cupos. Sumate al grupo de WhatsApp para reservar tu lugar.</p>
+            <p class="text-center note">*Cupos limitados. La prioridad es para quienes estén en el grupo de WhatsApp.</p>
         </div>
     </section>
 
-    <section id="apoyo" class="section bg-dark">
+    <section id="propuestas" class="section bg-dark-blue">
         <div class="container">
-            <h2 class="section-title">Nadie se queda atrás</h2>
-            <p class="text-center" style="margin-bottom: 40px;">Entendemos que el filtro es difícil. Por eso organizamos clases de apoyo gratuitas semanales.</p>
+            <h2 class="section-title text-white">SOLUCIONES DE FONDO</h2>
+            <div class="grid-3">
+                <div class="card card-dark">
+                    <i class="fas fa-search-dollar icon-box"></i>
+                    <h3>AUDITORÍA AL COMEDOR</h3>
+                    <p>Se acabó el curro. Exigimos auditoría contable YA, privatización del servicio para mejorar la calidad y pagos 100% digitales.</p>
+                </div>
+                <div class="card card-dark">
+                    <i class="fas fa-qrcode icon-box"></i>
+                    <h3>FOTOCOPIADORA LIBRE</h3>
+                    <p>Basta de monopolio y solo efectivo. Implementación inmediata de QR y competencia de precios.</p>
+                </div>
+                <div class="card card-dark">
+                    <i class="fas fa-file-signature icon-box"></i>
+                    <h3>TÍTULO INTERMEDIO</h3>
+                    <p>Reconocimiento por créditos. Respeto al esfuerzo académico para que tengas tu título antes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apoyo" class="section">
+        <div class="container">
+            <h2 class="section-title">NADIE SE QUEDA ATRÁS</h2>
+            <p class="text-center subtitle">El filtro es duro, pero no estás solo. Clases de apoyo voluntarias.</p>
             
             <div class="grid-3">
-                <div class="card" style="background: rgba(255,255,255,0.1); color: white; border: none;">
-                    <i class="fas fa-square-root-alt icon-box" style="color: var(--accent);"></i>
-                    <h3 style="color: var(--accent);">CBC y UBA XXI</h3>
-                    <p>Análisis Matemático, Álgebra, Física y Pensamiento Computacional.</p>
-                    <p><strong>Sede Las Heras</strong></p>
+                <div class="card">
+                    <div class="sede-tag">SEDE LAS HERAS</div>
+                    <h3>CBC y UBA XXI</h3>
+                    <p>Análisis, Álgebra, Física y Pensamiento Computacional.</p>
                 </div>
-                <div class="card" style="background: rgba(255,255,255,0.1); color: white; border: none;">
-                    <i class="fas fa-layer-group icon-box" style="color: var(--accent);"></i>
-                    <h3 style="color: var(--accent);">Primeros Años FIUBA</h3>
+                <div class="card">
+                    <div class="sede-tag">SEDE PASEO COLÓN</div>
+                    <h3>CICLO BÁSICO COMÚN</h3>
                     <p>Clases de consulta para Análisis II, Álgebra II y Física I.</p>
-                    <p><strong>Sede Paseo Colón</strong></p>
                 </div>
-                <div class="card" style="background: rgba(255,255,255,0.1); color: white; border: none;">
-                    <i class="fas fa-laptop-code icon-box" style="color: var(--accent);"></i>
-                    <h3 style="color: var(--accent);">Skills Laborales</h3>
-                    <p>Charla "De Junior a Senior" con Adrian y Valen Werle. Primeros pasos en IT e IA.</p>
+                <div class="card">
+                    <div class="sede-tag">CHARLA ABIERTA</div>
+                    <h3>SKILLS LABORALES</h3>
+                    <p>"De Junior a Senior" con referentes del sector IT e IA.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="propuestas" class="section">
+    <section id="equipo" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Soluciones Concretas</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <i class="fas fa-utensils icon-box"></i>
-                    <h3>Auditoría del Comedor</h3>
-                    <p>Basta de precios opacos y comida de mala calidad. Exigimos auditoría, privatización del servicio y medios de pago electrónicos.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-print icon-box"></i>
-                    <h3>Fotocopiadora Siglo XXI</h3>
-                    <p>Implementación inmediata de pagos con QR/Tarjeta. Se terminó el "solo efectivo" y la informalidad.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-graduation-cap icon-box"></i>
-                    <h3>Título Intermedio</h3>
-                    <p>Proponemos el reconocimiento por créditos, no por materias trabadas, para obtener el título intermedio más rápido.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="equipo" class="section bg-dark">
-        <div class="container">
-            <h2 class="section-title">El Equipo</h2>
+            <h2 class="section-title">EL EQUIPO</h2>
             <div class="team-grid">
                 <div class="team-member">
                     <h4>David</h4>
-                    <p style="font-size: 0.9rem; color: #ccc;">Ing. Civil</p>
+                    <p>Ing. Civil</p>
                 </div>
                 <div class="team-member">
                     <h4>Santiago</h4>
-                    <p style="font-size: 0.9rem; color: #ccc;">Ing. Industrial (Rel. Institucionales)</p>
+                    <p>Ing. Industrial</p>
                 </div>
                 <div class="team-member">
                     <h4>Franco</h4>
-                    <p style="font-size: 0.9rem; color: #ccc;">Ing. Civil</p>
+                    <p>Ing. Civil</p>
                 </div>
                 <div class="team-member">
                     <h4>Dante</h4>
-                    <p style="font-size: 0.9rem; color: #ccc;">Ing. Civil</p>
+                    <p>Ing. Civil</p>
                 </div>
                 <div class="team-member">
                     <h4>Esteban</h4>
-                    <p style="font-size: 0.9rem; color: #ccc;">Ing. Civil (Prof. Apoyo)</p>
+                    <p>Ing. Civil (Prof.)</p>
                 </div>
                 <div class="team-member">
                     <h4>Belén</h4>
-                    <p style="font-size: 0.9rem; color: #ccc;">Ing. Industrial</p>
+                    <p>Ing. Industrial</p>
                 </div>
                 <div class="team-member">
                     <h4>Leslie</h4>
-                    <p style="font-size: 0.9rem; color: #ccc;">Ing. Civil</p>
+                    <p>Ing. Civil</p>
                 </div>
                 <div class="team-member">
                     <h4>Kevin</h4>
-                    <p style="font-size: 0.9rem; color: #ccc;">Ing. Electrónica</p>
+                    <p>Ing. Electrónica</p>
                 </div>
             </div>
         </div>
@@ -183,23 +186,33 @@
 
     <footer>
         <div class="container">
-            <h3>SOMOS LIBRES FIUBA</h3>
-            <p>Hagamos historia. Recuperemos la facultad.</p>
-            <div style="margin-top: 20px;">
-                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
-                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5rem;"><i class="fab fa-twitter"></i></a>
-                <a href="#" style="color: white; margin: 0 10px; font-size: 1.5rem;"><i class="fab fa-whatsapp"></i></a>
+            <div class="logo-footer">
+                SOMOS LIBRES <span class="highlight">FIUBA</span>
             </div>
+            <p>VIVA LA LIBERTAD CARAJO.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://wa.me/XXXXXXXX"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright"><small>&copy; 2026. Hagamos a FIUBA grande otra vez.</small></p>
         </div>
     </footer>
-<script>
+
+    <script>
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
 
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
+        
+        // Cerrar menú al hacer click en un link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
     </script>
-</body>
 </body>
 </html>
