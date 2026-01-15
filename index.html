@@ -10,18 +10,22 @@
 </head>
 <body>
 
-    <nav class="navbar">
+   <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <img src="logo.png" alt="SL Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
                 SOMOS LIBRES
             </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
             <ul class="nav-links">
                 <li><a href="#agenda">Agenda Visitas</a></li>
                 <li><a href="#apoyo">Clases Apoyo</a></li>
                 <li><a href="#propuestas">Propuestas</a></li>
                 <li><a href="#equipo">Equipo</a></li>
-                <li><a href="https://wa.me/XXXXXXXX" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.8rem;">Sumate</a></li>
+                <li><a href="https://wa.me/XXXXXXXX" class="btn btn-primary btn-nav">Sumate</a></li>
             </ul>
         </div>
     </nav>
@@ -188,6 +192,14 @@
             </div>
         </div>
     </footer>
+<script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
 
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
 </body>
 </html>
