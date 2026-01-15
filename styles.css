@@ -96,3 +96,84 @@ h1, h2, h3, h4, .logo { font-family: var(--font-title); font-weight: 700; }
 
 /* FOOTER */
 footer { background: var(--primary); color: white; padding: 40px 0; text-align: center; }
+
+/* --- RESPONSIVE DESIGN (ESTILOS PARA CELULAR) --- */
+
+/* Ocultamos el botón de menú en PC */
+.menu-toggle {
+    display: none;
+}
+
+/* Ajustes para pantallas menores a 768px (Tablets y Celulares) */
+@media (max-width: 768px) {
+    
+    /* 1. Navbar: Menú hamburguesa */
+    .menu-toggle {
+        display: block;
+        font-size: 1.8rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%; /* Justo debajo de la barra */
+        left: 0;
+        width: 100%;
+        background-color: var(--primary); /* Fondo violeta sólido */
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        
+        /* Oculto por defecto */
+        display: none; 
+    }
+
+    /* Cuando activamos el menú con JS, se muestra así: */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    /* 2. Hero: Ajuste de textos gigantes */
+    .hero {
+        height: auto; /* Que se adapte al contenido */
+        padding: 100px 0 60px 0; /* Espacio arriba y abajo */
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Reducimos de 4rem a 2.5rem */
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    /* 3. Botones del Hero: Uno abajo del otro */
+    .hero .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* 4. Tablas (Agenda): Scroll horizontal */
+    .agenda-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    /* 5. Ajustes generales */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .nav-container {
+        padding: 0 20px;
+    }
+}
