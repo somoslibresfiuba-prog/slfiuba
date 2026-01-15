@@ -1,21 +1,24 @@
-/* IMPORTAR FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Montserrat:wght@400;600;700&display=swap');
+/* IMPORTAR FUENTES (Fuentes modernas y geométricas) */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;800&family=Montserrat:wght@400;600;700&display=swap');
 
-/* VARIABLES DE MARCA */
+/* --- PALETA DE COLORES LLA/SL --- */
 :root {
-    --primary: #512978;       /* Violeta Somos Libres */
-    --accent: #FFDF12;        /* Amarillo (Botones/Destacados) */
-    --secondary: #264D7E;     /* Azul (Fondos oscuros/Seriedad) */
-    --bg-light: #f4f4f4;      /* Fondo claro para secciones */
-    --bg-dark: #1a1a1a;       /* Fondo oscuro */
-    --text-dark: #333333;
+    /* Colores Oficiales */
+    --lla-yellow: #FFDF12;      /* Amarillo Vibrante */
+    --lla-violet: #512978;      /* Violeta Somos Libres */
+    --lla-blue: #264D7E;        /* Azul Serio */
+    
+    /* Colores de Interfaz */
+    --bg-light: #ffffff;
+    --bg-dark: #121212;
+    --text-dark: #222222;
     --text-light: #ffffff;
     
     --font-title: 'League Spartan', sans-serif;
     --font-body: 'Montserrat', sans-serif;
 }
 
-/* RESET BÁSICO */
+/* RESET */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -26,154 +29,163 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, .logo { font-family: var(--font-title); font-weight: 700; }
+/* TIPOGRAFÍA */
+h1, h2, h3, h4 { font-family: var(--font-title); text-transform: uppercase; letter-spacing: -0.5px; }
+.highlight { color: var(--lla-yellow); }
 
-/* UTILIDADES */
-.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-.highlight { color: var(--accent); }
-.section { padding: 80px 0; }
-.text-center { text-align: center; }
+/* --- NAVBAR --- */
+.navbar {
+    background-color: var(--lla-violet);
+    position: sticky; top: 0; z-index: 1000;
+    padding: 15px 0;
+    border-bottom: 4px solid var(--lla-yellow); /* Detalle amarillo abajo del nav */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+
+/* LOGO CORREGIDO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-family: var(--font-title);
+    font-weight: 800;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.logo img { height: 45px; width: auto; } /* Ajuste de tamaño de imagen */
+
+.nav-links { list-style: none; display: flex; gap: 25px; align-items: center; }
+.nav-links a { text-decoration: none; color: white; font-weight: 700; font-size: 0.9rem; text-transform: uppercase; transition: 0.3s; }
+.nav-links a:hover { color: var(--lla-yellow); }
 
 /* BOTONES */
 .btn {
-    display: inline-block; padding: 12px 30px; border-radius: 50px;
-    text-decoration: none; font-weight: 700; transition: 0.3s;
-    font-family: var(--font-title); text-transform: uppercase; letter-spacing: 1px;
+    display: inline-block; padding: 12px 30px; border-radius: 4px; /* Bordes más rectos, más serio */
+    text-decoration: none; font-weight: 800; transition: 0.3s;
+    font-family: var(--font-title); text-transform: uppercase;
 }
-.btn-primary { background-color: var(--accent); color: var(--primary); }
-.btn-primary:hover { background-color: #e6c800; transform: translateY(-2px); }
-.btn-outline { border: 2px solid var(--accent); color: var(--accent); }
-.btn-outline:hover { background-color: var(--accent); color: var(--primary); }
-
-/* NAVBAR */
-.navbar {
-    background-color: var(--primary); position: sticky; top: 0; z-index: 1000;
-    padding: 15px 0; border-bottom: 4px solid var(--secondary);
+.btn-primary {
+    background-color: var(--lla-yellow);
+    color: var(--lla-violet);
+    box-shadow: 0 4px 0 #d4b800; /* Efecto 3D simple */
 }
-.nav-container { display: flex; justify-content: space-between; align-items: center; }
-.logo { color: white; font-size: 1.8rem; text-transform: uppercase; }
-.nav-links { list-style: none; display: flex; gap: 20px; }
-.nav-links a { text-decoration: none; color: white; font-weight: 600; font-size: 0.9rem; }
-.nav-links a:hover { color: var(--accent); }
+.btn-primary:hover { transform: translateY(2px); box-shadow: 0 2px 0 #d4b800; background-color: #ffe64a; }
 
-/* HERO */
+.btn-outline {
+    border: 2px solid var(--lla-yellow);
+    color: var(--lla-yellow);
+}
+.btn-outline:hover { background-color: var(--lla-yellow); color: var(--lla-violet); }
+
+.btn-nav { padding: 8px 20px !important; font-size: 0.8rem; }
+
+/* --- HERO SECTION --- */
 .hero {
-    background: linear-gradient(rgba(38, 77, 126, 0.85), rgba(81, 41, 120, 0.9)), url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1950&q=80');
+    background: linear-gradient(135deg, rgba(81, 41, 120, 0.95), rgba(38, 77, 126, 0.9)), url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1950&q=80');
     background-size: cover; background-position: center;
-    height: 85vh; display: flex; align-items: center; text-align: center; color: white;
+    height: 90vh; display: flex; align-items: center; text-align: center; color: white;
+    position: relative;
 }
-.hero h1 { font-size: 4rem; margin-bottom: 10px; line-height: 1.1; }
-.hero p { font-size: 1.4rem; margin-bottom: 30px; font-weight: 400; }
+.hero-content { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; }
 
-/* SECCIONES */
-.section-title { font-size: 3rem; margin-bottom: 50px; text-align: center; color: var(--primary); }
-.bg-dark { background-color: var(--secondary); color: white; }
-.bg-dark .section-title { color: var(--accent); }
-
-/* TABLA AGENDA */
-.agenda-table {
-    width: 100%; border-collapse: collapse; background: white;
-    border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-top: 30px;
+.badge {
+    background-color: var(--lla-yellow); color: var(--lla-violet);
+    padding: 5px 15px; font-weight: 800; font-size: 0.9rem;
+    display: inline-block; margin-bottom: 20px; border-radius: 2px;
 }
-.agenda-table th { background: var(--primary); color: white; padding: 15px; font-family: var(--font-title); }
-.agenda-table td { padding: 15px; border-bottom: 1px solid #eee; }
-.agenda-table tr:last-child td { border-bottom: none; }
 
-/* GRID CARDS */
+.hero h1 { font-size: 4.5rem; line-height: 1; margin-bottom: 20px; font-weight: 800; text-shadow: 2px 2px 0 rgba(0,0,0,0.3); }
+.hero p { font-size: 1.3rem; margin-bottom: 40px; color: #f0f0f0; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+.hero-btns { display: flex; gap: 15px; justify-content: center; }
+
+/* --- SECCIONES COMUNES --- */
+.section { padding: 80px 0; }
+.section-title { font-size: 3rem; margin-bottom: 20px; text-align: center; color: var(--lla-violet); font-weight: 800; }
+.subtitle { margin-bottom: 50px; font-size: 1.2rem; color: #666; max-width: 700px; margin: 0 auto 50px; }
+.text-center { text-align: center; }
+.bg-dark-blue { background-color: var(--lla-blue); color: white; }
+.bg-dark-blue .section-title { color: var(--lla-yellow); }
+.bg-light { background-color: #f9f9f9; }
+
+/* --- AGENDA / TABLA --- */
+.table-wrapper { overflow-x: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 8px; }
+.agenda-table { width: 100%; border-collapse: collapse; background: white; min-width: 600px; }
+.agenda-table th { background: var(--lla-violet); color: white; padding: 20px; text-align: left; font-size: 1.1rem; }
+.agenda-table td { padding: 20px; border-bottom: 1px solid #eee; color: #333; font-weight: 500; }
+.agenda-table tr:hover td { background-color: #fffde7; } /* Hover amarillo suave */
+
+.tag-yellow {
+    background-color: var(--lla-yellow); color: var(--lla-violet);
+    padding: 5px 10px; font-weight: 800; font-size: 0.9rem;
+    border-radius: 4px; display: inline-block;
+}
+.note { font-size: 0.8rem; margin-top: 15px; color: #888; }
+
+/* --- CARDS --- */
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
 .card {
-    background: white; padding: 30px; border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: center; border-bottom: 5px solid var(--primary);
+    background: white; padding: 35px; border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: center;
+    border-bottom: 5px solid var(--lla-violet);
+    transition: 0.3s;
 }
-.card h3 { color: var(--secondary); margin: 15px 0; }
-.icon-box { font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
 
-/* EQUIPO */
+.card-dark {
+    background: rgba(255,255,255,0.05); /* Transparente sobre fondo oscuro */
+    border: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 5px solid var(--lla-yellow);
+    color: white;
+}
+.card-dark h3 { color: var(--lla-yellow); }
+.card-dark p { color: #ddd; }
+
+.icon-box { font-size: 2.5rem; color: var(--lla-yellow); margin-bottom: 20px; }
+.sede-tag { background: #eee; display: inline-block; padding: 5px 10px; font-size: 0.8rem; font-weight: 700; margin-bottom: 15px; color: #555; }
+
+/* --- EQUIPO --- */
 .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-.team-member { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; text-align: center; }
-.team-member h4 { color: var(--accent); margin-bottom: 5px; }
-
-/* FOOTER */
-footer { background: var(--primary); color: white; padding: 40px 0; text-align: center; }
-
-/* --- RESPONSIVE DESIGN (ESTILOS PARA CELULAR) --- */
-
-/* Ocultamos el botón de menú en PC */
-.menu-toggle {
-    display: none;
+.team-member {
+    background: white; padding: 20px; border-radius: 8px; text-align: center;
+    border: 1px solid #eee;
 }
+.team-member h4 { color: var(--lla-violet); margin-bottom: 5px; font-size: 1.2rem; }
+.team-member p { font-size: 0.9rem; color: #666; font-weight: 600; }
 
-/* Ajustes para pantallas menores a 768px (Tablets y Celulares) */
+/* --- FOOTER --- */
+footer { background: var(--lla-dark); color: white; padding: 60px 0 30px; text-align: center; background-color: #1a1a1a; border-top: 5px solid var(--lla-yellow); }
+.logo-footer { font-family: var(--font-title); font-size: 2rem; font-weight: 800; margin-bottom: 20px; }
+.social-icons { margin: 30px 0; }
+.social-icons a { color: white; font-size: 1.8rem; margin: 0 15px; transition: 0.3s; }
+.social-icons a:hover { color: var(--lla-yellow); }
+.copyright { color: #666; }
+
+/* --- RESPONSIVE MOBILE --- */
+.menu-toggle { display: none; }
+
 @media (max-width: 768px) {
+    .menu-toggle { display: block; font-size: 1.8rem; color: white; cursor: pointer; }
     
-    /* 1. Navbar: Menú hamburguesa */
-    .menu-toggle {
-        display: block;
-        font-size: 1.8rem;
-        color: white;
-        cursor: pointer;
-    }
-
     .nav-links {
-        position: absolute;
-        top: 100%; /* Justo debajo de la barra */
-        left: 0;
-        width: 100%;
-        background-color: var(--primary); /* Fondo violeta sólido */
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
+        position: absolute; top: 100%; left: 0; width: 100%;
+        background-color: var(--lla-violet);
+        flex-direction: column; padding: 30px 0;
         border-top: 1px solid rgba(255,255,255,0.1);
-        
-        /* Oculto por defecto */
-        display: none; 
+        display: none; /* Oculto por defecto */
     }
-
-    /* Cuando activamos el menú con JS, se muestra así: */
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
-
-    /* 2. Hero: Ajuste de textos gigantes */
-    .hero {
-        height: auto; /* Que se adapte al contenido */
-        padding: 100px 0 60px 0; /* Espacio arriba y abajo */
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem; /* Reducimos de 4rem a 2.5rem */
-    }
-
-    .hero p {
-        font-size: 1.1rem;
-    }
-
-    /* 3. Botones del Hero: Uno abajo del otro */
-    .hero .btn {
-        display: block;
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    /* 4. Tablas (Agenda): Scroll horizontal */
-    .agenda-table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
+    .nav-links.active { display: flex; }
+    .nav-links li { margin: 10px 0; }
     
-    /* 5. Ajustes generales */
-    .section-title {
-        font-size: 2rem;
-    }
+    .hero { height: auto; padding: 120px 0 80px; }
+    .hero h1 { font-size: 2.8rem; }
+    .hero-btns { flex-direction: column; }
+    .hero .btn { width: 100%; }
     
-    .nav-container {
-        padding: 0 20px;
-    }
+    .section-title { font-size: 2.2rem; }
 }
