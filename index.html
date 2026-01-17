@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somos Libres - FIUBA | Gestión y Futuro</title>
+    <title>Somos Libres - FIUBA | Ganar en 2026</title>
     <link rel="icon" type="image/png" href="favicon.png?v=5">
-    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="styles.css?v=6">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta property="og:title" content="Somos Libres FIUBA - Modernización y Gestión">
+    <meta property="og:description" content="La carrera es difícil, la facultad no debería serlo. Sumate al equipo que va a transformar el Centro en 2026.">
+    <meta property="og:image" content="link-a-tu-imagen-preview.jpg">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="container nav-container">
             <div class="logo">
-                <img src="logo.png?v=5" alt="SL FIUBA Logo">
-                <span>SOMOS LIBRES</span>
+                <i class="fas fa-lion"></i> <span>SOMOS LIBRES <span class="highlight">FIUBA</span></span>
             </div>
             
             <div class="menu-toggle">
@@ -22,11 +24,11 @@
             </div>
 
             <ul class="nav-links">
-                <li><a href="#agenda">Vinculación Privada</a></li>
-                <li><a href="#servicios">Modernización</a></li>
-                <li><a href="#apoyo">Clases Apoyo</a></li>
+                <li><a href="#propuestas">Propuestas</a></li>
+                <li><a href="#agenda">Visitas</a></li>
+                <li><a href="#tutorias">Tutorías</a></li>
                 <li><a href="#equipo">Equipo</a></li>
-                <li><a href="https://wa.me/54911XXXXXXXX" class="btn btn-primary btn-nav">Sumate al Equipo</a></li>
+                <li><a href="https://wa.me/54911XXXXXXXX" target="_blank" class="btn btn-primary btn-nav">¡Sumate y Participá!</a></li>
             </ul>
         </div>
     </nav>
@@ -34,28 +36,68 @@
     <header class="hero">
         <div class="overlay"></div>
         <div class="container hero-content">
-            <span class="badge">GESTIÓN + INGENIERÍA</span>
+            <span class="badge">OBJETIVO: GANAR EL CENTRO 2026</span>
             <h1>LA CARRERA ES DIFÍCIL.<br><span class="highlight">LA FACULTAD NO DEBERÍA SERLO.</span></h1>
-            <p>Venimos a gestionar. Queremos modernizar los servicios, auditar los gastos y conectarte con las empresas líderes desde el primer día.</p>
+            <p>Venimos a gestionar con lógica de ingeniería. Menos burocracia, más transparencia y conexión real con el sector privado.</p>
             <div class="hero-btns">
-                <a href="#agenda" class="btn btn-primary">VER VISITAS A EMPRESAS</a>
-                <a href="#servicios" class="btn btn-outline">VER PLAN DE MEJORAS</a>
+                <a href="https://wa.me/54911XXXXXXXX" target="_blank" class="btn btn-primary">SUMATE AL EQUIPO</a>
+                <a href="#propuestas" class="btn btn-outline">VER PLAN DE GESTIÓN</a>
             </div>
         </div>
     </header>
 
+    <section id="propuestas" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">NUESTRO PLAN DE ACCIÓN</h2>
+            <p class="text-center subtitle">No son promesas, son soluciones técnicas a problemas históricos.</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <i class="fas fa-utensils icon-box"></i>
+                    <h3>MODERNIZACIÓN DE SERVICIOS</h3>
+                    <p>Privatización y competencia en <strong>Comedores y Librerías</strong>. Queremos oferentes que compitan por darte el mejor precio y calidad, no monopolios del centro.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-industry icon-box"></i>
+                    <h3>VÍNCULO PRIVADO</h3>
+                    <p>Tu título tiene que valer afuera. Organizamos visitas a <strong>fábricas, empresas y obras</strong> desde el primer año.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-laptop-code icon-box"></i>
+                    <h3>CAPACITACIÓN REAL</h3>
+                    <p>Cursos de <strong>IA, Python y Herramientas Laborales</strong> que la facultad no te enseña pero el mercado exige.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-paint-roller icon-box"></i>
+                    <h3>INFRAESTRUCTURA</h3>
+                    <p>Auditoría y mejora de espacios. Basta de cursar en aulas rotas o sin enchufes.</p>
+                </div>
+                 <div class="card">
+                    <i class="fas fa-chalkboard-teacher icon-box"></i>
+                    <h3>REFERENTES</h3>
+                    <p>Charlas con ingenieros líderes y empresarios exitosos. Aprender de los que hacen.</p>
+                </div>
+                 <div class="card">
+                    <i class="fas fa-user-graduate icon-box"></i>
+                    <h3>TUTORÍAS</h3>
+                    <p>Acompañamiento académico real para que no abandones en los primeros años.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="agenda" class="section">
         <div class="container">
-            <h2 class="section-title">VINCULACIÓN PROFESIONAL</h2>
-            <p class="text-center subtitle">No esperes a recibirte para conocer la industria. Te llevamos a las empresas que lideran el mercado.</p>
+            <h2 class="section-title">AGENDA DE VISITAS</h2>
+            <p class="text-center subtitle">Conectate con el futuro profesional hoy mismo.</p>
             
             <div class="table-wrapper">
                 <table class="agenda-table">
                     <thead>
                         <tr>
                             <th>MES</th>
-                            <th>CHARLA TÉCNICA</th>
-                            <th>VISITA A PLANTA/OBRA</th>
+                            <th>TEMÁTICA</th>
+                            <th>EMPRESA OBJETIVO</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -66,121 +108,61 @@
                         </tr>
                         <tr>
                             <td><strong>ABRIL</strong></td>
-                            <td>Energía (YPF - H. Marín)</td>
-                            <td><span class="tag-yellow">FORD</span></td>
+                            <td>Energía y Petróleo</td>
+                            <td><span class="tag-yellow">YPF / PAE</span></td>
                         </tr>
                         <tr>
                             <td><strong>MAYO</strong></td>
                             <td>Minería</td>
-                            <td><span class="tag-yellow">INVAP</span></td>
+                            <td><span class="tag-yellow">LITHIUM</span></td>
                         </tr>
                         <tr>
                             <td><strong>JUNIO</strong></td>
-                            <td>Data Centers</td>
+                            <td>Tech & E-commerce</td>
                             <td><span class="tag-yellow">MERCADO LIBRE</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>JULIO</strong></td>
-                            <td>Offshore</td>
-                            <td><span class="tag-yellow">GLOBANT</span></td>
-                        </tr>
-                        <tr>
-                            <td><strong>AGOSTO</strong></td>
-                            <td>Grandes Obras Civiles</td>
-                            <td><span class="tag-yellow">CONSTRUCTORAS</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="text-center note">*Agenda 2026 confirmada. Cupos limitados para estudiantes del grupo oficial.</p>
-        </div>
-    </section>
-
-    <section id="servicios" class="section bg-dark-blue">
-        <div class="container">
-            <h2 class="section-title text-white">MODERNIZACIÓN DE SERVICIOS</h2>
-            <p class="text-center subtitle" style="color: #ccc;">Aplicar lógica de ingeniería a la gestión diaria: eficiencia, competencia y transparencia.</p>
-            
-            <div class="grid-3">
-                <div class="card card-dark">
-                    <i class="fas fa-utensils icon-box"></i>
-                    <h3>COMEDOR EFICIENTE</h3>
-                    <p>Propuesta de privatización y competencia de oferentes. Objetivo: comida de calidad nutricional, opciones variadas y auditoría de precios.</p>
-                </div>
-                <div class="card card-dark">
-                    <i class="fas fa-qrcode icon-box"></i>
-                    <h3>FOTOCOPIADORA 2.0</h3>
-                    <p>Basta de "solo efectivo". Implementación obligatoria de pagos digitales (QR/Tarjeta) y sistema de envío de archivos online.</p>
-                </div>
-                <div class="card card-dark">
-                    <i class="fas fa-search-dollar icon-box"></i>
-                    <h3>AUDITORÍA ABIERTA</h3>
-                    <p>Transparencia total. Vamos a publicar los balances del Centro. Cada peso que entra debe volver al estudiante en servicios.</p>
-                </div>
+            <div class="cta-banner">
+                <p>¿Querés asegurar tu lugar en estas visitas?</p>
+                <a href="https://wa.me/54911XXXXXXXX" class="btn btn-primary">RESERVAR CUPO</a>
             </div>
         </div>
     </section>
 
-    <section id="apoyo" class="section">
+    <section id="equipo" class="section bg-dark-blue">
         <div class="container">
-            <h2 class="section-title">TE ACOMPAÑAMOS</h2>
-            <p class="text-center subtitle">Sabemos que el filtro es duro. Estamos para darte herramientas, no discursos.</p>
-            
-            <div class="grid-3">
-                <div class="card">
-                    <div class="sede-tag">SEDE LAS HERAS</div>
-                    <h3>CLASES DE APOYO CBC</h3>
-                    <p>Refuerzo semanal en Análisis, Álgebra, Física y Pensamiento Computacional. Para que arranques firme.</p>
-                </div>
-                <div class="card">
-                    <div class="sede-tag">SEDE PASEO COLÓN</div>
-                    <h3>MATERIAS TRONCALES</h3>
-                    <p>Clases de consulta para Análisis II, Álgebra II y Física I. Te ayudamos a preparar los parciales.</p>
-                </div>
-                <div class="card">
-                    <div class="sede-tag">GESTIÓN ACADÉMICA</div>
-                    <h3>TÍTULO INTERMEDIO</h3>
-                    <p>Impulsamos el reconocimiento por créditos. Que tu avance académico se certifique sin trabas burocráticas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="equipo" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">SOMOS ESTUDIANTES</h2>
+            <h2 class="section-title text-white">EL EQUIPO</h2>
+            <p class="text-center subtitle" style="color: #ccc;">Estudiantes como vos que decidieron involucrarse.</p>
             <div class="team-grid">
-                <div class="team-member">
-                    <h4>David</h4>
-                    <p>Ing. Civil</p>
+                <div class="team-member card-dark">
+                    <h4>David Maciel</h4>
+                    <p class="role">Coordinación General</p>
+                    <p class="career">Ing. Civil</p>
                 </div>
-                <div class="team-member">
-                    <h4>Santiago</h4>
-                    <p>Ing. Industrial</p>
+                <div class="team-member card-dark">
+                    <h4>Santiago Durantini</h4>
+                    <p class="role">Relaciones Institucionales</p>
+                    <p class="career">Ing. Industrial</p>
                 </div>
-                <div class="team-member">
+                <div class="team-member card-dark">
+                    <h4>Ivan Castelnuovo</h4>
+                    <p class="role">Comunicación y Redes</p>
+                    <p class="career">ICC</p>
+                </div>
+                <div class="team-member card-dark">
+                    <h4>Elian Acuña</h4>
+                    <p class="role">Acción Territorial</p>
+                    <p class="career">Ingeniería</p>
+                </div>
+                <div class="team-member card-dark">
                     <h4>Franco</h4>
-                    <p>Ing. Civil</p>
+                    <p class="career">Ing. Civil</p>
                 </div>
-                <div class="team-member">
-                    <h4>Dante</h4>
-                    <p>Ing. Civil</p>
-                </div>
-                <div class="team-member">
-                    <h4>Esteban</h4>
-                    <p>Ing. Civil</p>
-                </div>
-                <div class="team-member">
+                <div class="team-member card-dark">
                     <h4>Belén</h4>
-                    <p>Ing. Industrial</p>
-                </div>
-                <div class="team-member">
-                    <h4>Leslie</h4>
-                    <p>Ing. Civil</p>
-                </div>
-                <div class="team-member">
-                    <h4>Kevin</h4>
-                    <p>Ing. Electrónica</p>
+                    <p class="career">Ing. Industrial</p>
                 </div>
             </div>
         </div>
@@ -191,7 +173,7 @@
             <div class="logo-footer">
                 SOMOS LIBRES <span class="highlight">FIUBA</span>
             </div>
-            <p>Gestión. Transparencia. Futuro.</p>
+            <p>Hacia el Centro de Estudiantes 2026.</p>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
