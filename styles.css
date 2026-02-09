@@ -105,9 +105,9 @@ h1, h2, h3, h4 {
 .card:hover { transform: translateY(-10px); }
 .icon-box { font-size: 2.5rem; color: var(--primary); margin-bottom: 20px; }
 
-/* --- TABLA --- */
+/* --- TABLA (SIN CUPOS) --- */
 .table-wrapper { overflow-x: auto; background: white; border-radius: 8px; margin-top: 30px; }
-.agenda-table { width: 100%; border-collapse: collapse; min-width: 650px; color: var(--text-main); }
+.agenda-table { width: 100%; border-collapse: collapse; min-width: 600px; color: var(--text-main); }
 .agenda-table th { background: var(--primary); color: white; padding: 18px; text-align: left; font-size: 0.8rem; }
 .agenda-table td { padding: 18px; border-bottom: 1px solid #eee; }
 .tag-brand { background: var(--accent); color: var(--primary); padding: 4px 10px; border-radius: 4px; font-weight: 800; font-size: 0.75rem; }
@@ -143,5 +143,4 @@ footer { background: #0f0f1a; color: #aaa; padding: 60px 0 20px; text-align: cen
     }
     .nav-links.active { display: flex; }
     .hero h1 { font-size: 2.2rem; }
-    .hero-btns { flex-direction: column; }
 }
