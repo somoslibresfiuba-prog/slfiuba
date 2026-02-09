@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somos Libres - FIUBA | Gestión y Modernización</title>
+    <title>Somos Libres - FIUBA | Gestión Profesional</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +14,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .logo-img {
+            height: 40px; /* Ajusta esto según el tamaño de tu png */
+            width: auto;
+            margin-right: 10px;
+        }
+        /* Ajuste para que el texto SOMOS LIBRES quede bien alineado con la imagen */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
 
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <i class="fas fa-bolt highlight"></i> SOMOS LIBRES
+                <img src="logo.png" alt="Logo SL" class="logo-img">
+                <span>SOMOS LIBRES</span>
             </a>
             
             <div class="menu-toggle" id="mobile-menu">
@@ -26,9 +42,9 @@
             </div>
 
             <ul class="nav-links">
-                <li><a href="#apoyo">Apoyo</a></li>
-                <li><a href="#servicios">Propuestas</a></li>
-                <li><a href="#agenda">Visitas</a></li>
+                <li><a href="#modernizacion">Propuestas</a></li>
+                <li><a href="#visitas">Visitas</a></li>
+                <li><a href="#apoyo">Clases</a></li>
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="https://wa.me/54911XXXXXXXX" class="btn btn-primary btn-nav">Sumate</a></li>
             </ul>
@@ -38,69 +54,44 @@
     <header class="hero">
         <div class="container hero-content">
             <span class="badge">ESTUDIANTES DE INGENIERÍA</span>
-            <h1>GANÁ <span class="highlight">INGENIERÍA</span></h1>
-            <p>No venimos a dar discursos, venimos a gestionar. Clases de apoyo reales, modernización de servicios y contacto directo con la industria.</p>
+            <h1>VENIMOS A <span class="highlight">GESTIONAR</span></h1>
+            <p>Se acabaron los discursos vacíos. Traemos lógica, modernización de servicios y contacto real con la industria. Hacemos lo que hay que hacer.</p>
             <div class="hero-btns">
-                <a href="#agenda" class="btn btn-primary">VER VISITAS 2026</a>
-                <a href="#apoyo" class="btn btn-outline">CLASES DE APOYO</a>
+                <a href="#modernizacion" class="btn btn-primary">VER PROPUESTAS</a>
+                <a href="#visitas" class="btn btn-outline">AGENDA 2026</a>
             </div>
         </div>
     </header>
 
-    <section id="apoyo" class="section">
-        <div class="container">
-            <h2 class="section-title">ACOMPAÑAMIENTO ACADÉMICO</h2>
-            <p class="subtitle text-center">Herramientas reales para que el inicio de la carrera no sea una traba.</p>
-            
-            <div class="grid-3">
-                <div class="card">
-                    <i class="fas fa-book-open icon-box"></i>
-                    <h3>CLASES DE REFUERZO</h3>
-                    <p>Encuentros semanales de Álgebra, Análisis y Física dictados por estudiantes avanzados.</p>
-                </div>
-                <div class="card card-accent">
-                    <i class="fas fa-folder-open icon-box"></i>
-                    <h3>DRIVE DE APUNTES</h3>
-                    <p>Acceso libre a parciales resueltos, guías paso a paso y modelos de examen.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-users icon-box"></i>
-                    <h3>GRUPOS DE ESTUDIO</h3>
-                    <p>Comunidad en WhatsApp por materia para consultas y armado de equipos.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="servicios" class="section bg-light">
+    <section id="modernizacion" class="section bg-light">
         <div class="container">
             <h2 class="section-title">MODERNIZACIÓN FIUBA</h2>
-            <p class="subtitle text-center">Propuestas basadas en la eficiencia para mejorar el día a día en la facultad.</p>
+            <p class="subtitle text-center">Basta de burocracia. Propuestas de eficiencia para mejorar tu día a día.</p>
             
             <div class="grid-3">
                 <div class="card">
                     <i class="fas fa-utensils icon-box"></i>
                     <h3>COMEDOR PRIVADO</h3>
-                    <p>Concesión a privados para asegurar calidad y precios competitivos por competencia.</p>
+                    <p>Competencia para mejorar la calidad. Concesión a privados para bajar precios y mejorar el menú.</p>
                 </div>
                 <div class="card">
-                    <i class="fas fa-mobile-alt icon-box"></i>
+                    <i class="fas fa-qrcode icon-box"></i>
                     <h3>PAGOS DIGITALES</h3>
-                    <p>Implementación obligatoria de Mercado Pago y QR en fotocopiadora y buffet.</p>
+                    <p>Es el siglo XXI. Exigimos Mercado Pago y QR en fotocopiadora y buffet. Basta de "solo efectivo".</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-wifi icon-box"></i>
-                    <h3>CONECTIVIDAD</h3>
-                    <p>Gestión para el refuerzo de WiFi y más bocinas de carga en áreas comunes.</p>
+                    <h3>CONECTIVIDAD REAL</h3>
+                    <p>Plan de inversión en WiFi de alta velocidad y estaciones de carga en todas las mesas de estudio.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="agenda" class="section bg-dark-brand">
+    <section id="visitas" class="section bg-dark-brand">
         <div class="container">
             <h2 class="section-title">VISITAS ESTRATÉGICAS 2026</h2>
-            <p class="text-center" style="margin-bottom: 30px; color: #f0f0f0;">Conectamos la formación académica con las empresas que mueven al país.</p>
+            <p class="text-center" style="margin-bottom: 30px; color: #f0f0f0;">Tu carrera no termina en el aula. Te conectamos con los líderes del mercado.</p>
             
             <div class="table-wrapper">
                 <table class="agenda-table">
@@ -108,39 +99,64 @@
                         <tr>
                             <th>MES</th>
                             <th>EMPRESA / OBRA</th>
-                            <th>UBICACIÓN / REFERENTE</th>
+                            <th>UBICACIÓN</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr><td><strong>MARZO</strong></td><td><span class="tag-brand">YPF</span><br><small>Data Control Center</small></td><td>Puerto Madero</td></tr>
-                        <tr><td><strong>MARZO</strong></td><td><span class="tag-brand">MERCADO LIBRE</span><br><small>HQ Saavedra (D. Rabinovich)</small></td><td>Polo Dot, CABA</td></tr>
-                        <tr><td><strong>ABRIL</strong></td><td><span class="tag-brand">AEROLÍNEAS</span><br><small>Hangares (F. Lombardo)</small></td><td>Planta Ezeiza</td></tr>
-                        <tr><td><strong>ABRIL</strong></td><td><span class="tag-brand">GLOBANT</span><br><small>Global HQ</small></td><td>Della Paolera, Retiro</td></tr>
-                        <tr><td><strong>MAYO</strong></td><td><span class="tag-brand">AYSA</span><br><small>Obra Hídrica (L. Giovine)</small></td><td>Planta San Martín</td></tr>
-                        <tr><td><strong>JUNIO</strong></td><td><span class="tag-brand">TOYOTA</span><br><small>Planta Industrial Pacheco</small></td><td>Gral. Pacheco</td></tr>
-                        <tr><td><strong>JULIO</strong></td><td><span class="tag-brand">TGS</span><br><small>Centro de Control (O. Sardi)</small></td><td>Planta Belgrano</td></tr>
-                        <tr><td><strong>AGOSTO</strong></td><td><span class="tag-brand">SACDE</span><br><small>Obra de Infraestructura</small></td><td>A designar según proyecto</td></tr>
-                        <tr><td><strong>SEPT</strong></td><td><span class="tag-brand">IBM</span><br><small>Data Center & Innovación</small></td><td>Campus Olivos/Retiro</td></tr>
-                        <tr><td><strong>SEPT</strong></td><td><span class="tag-brand">RIVER PLATE</span><br><small>Ingeniería Estructural</small></td><td>Estadio Monumental</td></tr>
-                        <tr><td><strong>OCT</strong></td><td><span class="tag-brand">CNEA</span><br><small>Centro Atómico (G. Lavalle)</small></td><td>Constituyentes</td></tr>
-                        <tr><td><strong>OCT</strong></td><td><span class="tag-brand">YPF</span><br><small>Refinería La Plata (Cierre)</small></td><td>Complejo Industrial</td></tr>
+                        <tr><td><strong>MARZO</strong></td><td><span class="tag-brand">MERCADO LIBRE</span><br><small>HQ Saavedra</small></td><td>Polo Dot, CABA</td></tr>
+                        <tr><td><strong>ABRIL</strong></td><td><span class="tag-brand">AEROLÍNEAS</span><br><small>Hangares Ezeiza</small></td><td>Planta Ezeiza</td></tr>
+                        <tr><td><strong>ABRIL</strong></td><td><span class="tag-brand">GLOBANT</span><br><small>Global HQ</small></td><td>Retiro, CABA</td></tr>
+                        <tr><td><strong>MAYO</strong></td><td><span class="tag-brand">AYSA</span><br><small>Obra Hídrica</small></td><td>Planta San Martín</td></tr>
+                        <tr><td><strong>JUNIO</strong></td><td><span class="tag-brand">TOYOTA</span><br><small>Planta Industrial</small></td><td>Gral. Pacheco</td></tr>
+                        <tr><td><strong>JULIO</strong></td><td><span class="tag-brand">TGS</span><br><small>Centro de Control</small></td><td>Planta Belgrano</td></tr>
+                        <tr><td><strong>AGOSTO</strong></td><td><span class="tag-brand">SACDE</span><br><small>Obra Infraestructura</small></td><td>A designar</td></tr>
+                        <tr><td><strong>SEPT</strong></td><td><span class="tag-brand">IBM</span><br><small>Innovation Center</small></td><td>Olivos</td></tr>
+                        <tr><td><strong>SEPT</strong></td><td><span class="tag-brand">RIVER PLATE</span><br><small>Ing. Estructural</small></td><td>Núñez</td></tr>
+                        <tr><td><strong>OCT</strong></td><td><span class="tag-brand">CNEA</span><br><small>Centro Atómico</small></td><td>Constituyentes</td></tr>
+                        <tr><td><strong>OCT</strong></td><td><span class="tag-brand">YPF</span><br><small>Refinería (Cierre)</small></td><td>La Plata</td></tr>
                     </tbody>
                 </table>
             </div>
 
             <div class="form-container">
-                <h3>¿CÓMO INSCRIBIRSE?</h3>
-                <p>Las inscripciones abren 15 días antes de cada fecha. Requisito: Padrón y Seguro Escolar vigente.</p>
+                <h3 style="color: var(--accent);">ASEGURÁ TU LUGAR</h3>
+                <p>Inscripciones abiertas 15 días antes de cada visita. Requisito: Padrón y Seguro.</p>
                 <a href="https://docs.google.com/forms/d/e/TU_ID_DE_FORMULARIO/viewform" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-google-drive"></i> COMPLETAR FORMULARIO DE INSCRIPCIÓN
+                    <i class="fab fa-google-drive"></i> COMPLETAR FORMULARIO
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="equipo" class="section">
+    <section id="apoyo" class="section">
         <div class="container">
-            <h2 class="section-title">QUIÉNES SOMOS</h2>
+            <h2 class="section-title">APOYO ACADÉMICO</h2>
+            <p class="subtitle text-center">Porque sabemos que los filtros existen. Te damos herramientas para superarlos.</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <i class="fas fa-book-open icon-box"></i>
+                    <h3>CLASES DE REFUERZO</h3>
+                    <p>Encuentros semanales de Álgebra, Análisis y Física. Explicaciones de estudiantes para estudiantes.</p>
+                </div>
+                <div class="card card-accent">
+                    <i class="fas fa-folder-open icon-box"></i>
+                    <h3>DRIVE ABIERTO</h3>
+                    <p>Acceso libre a nuestra base de datos con parciales resueltos, guías y libros PDF.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-users icon-box"></i>
+                    <h3>COMUNIDAD</h3>
+                    <p>Grupos de WhatsApp activos por materia para consultas rápidas y estudio en equipo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">EL EQUIPO</h2>
             <div class="team-grid">
                 <div class="team-member">
                     <h4>David Maciel</h4>
@@ -157,27 +173,43 @@
                     <p class="role">Comunicación</p>
                     <p class="career">ICC</p>
                 </div>
+                <div class="team-member">
+                    <h4>Elian Acuña</h4>
+                    <p class="role">Acción Territorial</p>
+                    <p class="career">Ingeniería</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <div class="logo-footer">SOMOS LIBRES <span class="highlight">FIUBA</span></div>
-            <p>Hacia una gestión profesional y transparente.</p>
+            <div class="logo-footer">
+                <img src="logo.png" alt="Logo Footer" style="height: 30px; vertical-align: middle; margin-right: 5px;"> 
+                SOMOS LIBRES <span class="highlight">FIUBA</span>
+            </div>
+            <p>Hacia una gestión transparente y de calidad.</p>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="https://wa.me/54911XXXXXXXX"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <p style="font-size: 0.75rem; opacity: 0.5; margin-top: 20px;">&copy; 2026 Somos Libres FIUBA. La Libertad Avanza en Ingeniería.</p>
+            <p style="font-size: 0.75rem; opacity: 0.5; margin-top: 20px;">&copy; 2026 Somos Libres FIUBA.</p>
         </div>
     </footer>
 
     <script>
         const menuToggle = document.getElementById('mobile-menu');
         const navLinks = document.querySelector('.nav-links');
+        
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+        });
+
+        // Cierra el menú móvil al hacer click en un enlace
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
         });
     </script>
 </body>
