@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somos Libres - FIUBA | Gestión Profesional</title>
+    <title>Somos Libres - FIUBA | Ingeniería Inteligente</title>
     
     <link rel="icon" type="image/png" href="favicon.png">
     
@@ -16,15 +16,43 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        .logo-img {
-            height: 40px; /* Ajusta esto según el tamaño de tu png */
-            width: auto;
-            margin-right: 10px;
+        /* Ajustes específicos */
+        .logo-img { height: 40px; width: auto; margin-right: 12px; }
+        .logo { display: flex; align-items: center; }
+        
+        /* Estilos para la lista de propuestas */
+        .propuesta-list { list-style: none; padding: 0; margin-top: 20px; text-align: left; }
+        .propuesta-list li { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #eee; font-size: 0.95rem; }
+        .propuesta-list li:last-child { border-bottom: none; }
+        .check-icon { color: var(--accent); margin-right: 10px; width: 20px; }
+
+        /* NUEVA SECCIÓN: MANIFIESTO */
+        .manifesto-box {
+            background: white;
+            border-left: 6px solid var(--primary);
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-radius: 0 8px 8px 0;
         }
-        /* Ajuste para que el texto SOMOS LIBRES quede bien alineado con la imagen */
-        .logo {
-            display: flex;
-            align-items: center;
+        .valores-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .valor-item {
+            text-align: center;
+            padding: 15px;
+            background: var(--bg-light);
+            border-radius: 6px;
+            font-weight: 700;
+            color: var(--primary);
+            font-family: var(--font-head);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .valores-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -33,7 +61,7 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="logo.png" alt="Logo SL" class="logo-img">
+                <img src="logo.png" alt="Somos Libres" class="logo-img">
                 <span>SOMOS LIBRES</span>
             </a>
             
@@ -42,10 +70,10 @@
             </div>
 
             <ul class="nav-links">
-                <li><a href="#modernizacion">Propuestas</a></li>
+                <li><a href="#identidad">Quiénes Somos</a></li>
+                <li><a href="#plan">Plan 2026</a></li>
                 <li><a href="#visitas">Visitas</a></li>
-                <li><a href="#apoyo">Clases</a></li>
-                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#apoyo">Apoyo</a></li>
                 <li><a href="https://wa.me/54911XXXXXXXX" class="btn btn-primary btn-nav">Sumate</a></li>
             </ul>
         </div>
@@ -54,51 +82,100 @@
     <header class="hero">
         <div class="container hero-content">
             <span class="badge">ESTUDIANTES DE INGENIERÍA</span>
-            <h1>VENIMOS A <span class="highlight">GESTIONAR</span></h1>
-            <p>Se acabaron los discursos vacíos. Traemos lógica, modernización de servicios y contacto real con la industria. Hacemos lo que hay que hacer.</p>
+            <h1>SL <span class="highlight">INGENIERÍA INTELIGENTE</span></h1>
+            <p>La facultad no necesita más política partidaria, necesita lógica. Venimos a gestionar con datos, transparencia y libertad. Recuperemos el prestigio de la UBA.</p>
             <div class="hero-btns">
-                <a href="#modernizacion" class="btn btn-primary">VER PROPUESTAS</a>
-                <a href="#visitas" class="btn btn-outline">AGENDA 2026</a>
+                <a href="#identidad" class="btn btn-primary">CONOCENOS</a>
+                <a href="#plan" class="btn btn-outline">PLAN DE GOBIERNO</a>
             </div>
         </div>
     </header>
 
-    <section id="modernizacion" class="section bg-light">
+    <section id="identidad" class="section">
         <div class="container">
-            <h2 class="section-title">MODERNIZACIÓN FIUBA</h2>
-            <p class="subtitle text-center">Basta de burocracia. Propuestas de eficiencia para mejorar tu día a día.</p>
+            <div class="grid-3" style="grid-template-columns: 1fr 1fr; align-items: center;">
+                
+                <div style="grid-column: span 2;">
+                    <h2 class="section-title" style="text-align: left;">SOMOS INGENIEROS,<br><span class="highlight">NO POLÍTICOS</span></h2>
+                    
+                    <div class="manifesto-box">
+                        <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                            <strong>Somos Libres</strong> es una agrupación de estudiantes de Ingeniería que entiende la universidad no como un comité político, sino como el primer paso hacia el éxito profesional.
+                        </p>
+                        <p style="margin-bottom: 20px; color: #555;">
+                            Somos <strong>liberales</strong> porque creemos que la mejor forma de gestionar la facultad es aplicando los principios de nuestra carrera: <strong>optimización de recursos, lógica basada en datos y libertad individual.</strong>
+                        </p>
+                        <p style="color: #555;">
+                            Nos cansamos de ver carteles ideológicos mientras se caen los techos. Nos cansamos de un centro de estudiantes que gasta tu dinero en política partidaria en lugar de fotocopias o insumos. Venimos a cambiar la "política de pasillo" por la <strong>política de gestión</strong>.
+                        </p>
+
+                        <div class="valores-grid">
+                            <div class="valor-item"><i class="fas fa-brain" style="display:block; margin-bottom:5px; color:var(--accent);"></i> MÉRITO</div>
+                            <div class="valor-item"><i class="fas fa-search-dollar" style="display:block; margin-bottom:5px; color:var(--accent);"></i> TRANSPARENCIA</div>
+                            <div class="valor-item"><i class="fas fa-bolt" style="display:block; margin-bottom:5px; color:var(--accent);"></i> EFICIENCIA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                </div>
+        </div>
+    </section>
+
+    <section id="plan" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">PLAN DE GESTIÓN 2026</h2>
+            <p class="subtitle text-center">No son promesas vacías. Son 3 ejes técnicos para modernizar la FIUBA de raíz.</p>
             
             <div class="grid-3">
-                <div class="card">
-                    <i class="fas fa-utensils icon-box"></i>
-                    <h3>COMEDOR PRIVADO</h3>
-                    <p>Competencia para mejorar la calidad. Concesión a privados para bajar precios y mejorar el menú.</p>
+                
+                <div class="card" style="border-top: 5px solid var(--accent);">
+                    <h3 style="color: var(--primary); display:flex; align-items:center; justify-content: center; gap:10px;">
+                        <i class="fas fa-chart-line"></i> ADMINISTRACIÓN
+                    </h3>
+                    <ul class="propuesta-list">
+                        <li><i class="fas fa-check check-icon"></i> <strong>Auditoría al CEI:</strong> Apertura total de libros. Vamos a publicar online cada peso que gasta el Centro.</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Trámites 100% Online:</strong> Digitalización de la burocracia estudiantil. Basta de filas inútiles.</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Comedor Privado:</strong> Licitación abierta para competir por precio y calidad. El monopolio estatal fracasó.</li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <i class="fas fa-qrcode icon-box"></i>
-                    <h3>PAGOS DIGITALES</h3>
-                    <p>Es el siglo XXI. Exigimos Mercado Pago y QR en fotocopiadora y buffet. Basta de "solo efectivo".</p>
+
+                <div class="card" style="border-top: 5px solid var(--blue-brand);">
+                    <h3 style="color: var(--blue-brand); display:flex; align-items:center; justify-content: center; gap:10px;">
+                        <i class="fas fa-network-wired"></i> INFRAESTRUCTURA
+                    </h3>
+                    <ul class="propuesta-list">
+                        <li><i class="fas fa-check check-icon"></i> <strong>Conectividad:</strong> Inversión prioritaria en WiFi 6 de alta velocidad en aulas y subsuelos.</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Energía:</strong> Instalación de tomas de carga en todas las mesas de estudio y pasillos.</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Baños Dignos:</strong> Reasignación del presupuesto de "folletería política" a mantenimiento sanitario.</li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <i class="fas fa-wifi icon-box"></i>
-                    <h3>CONECTIVIDAD REAL</h3>
-                    <p>Plan de inversión en WiFi de alta velocidad y estaciones de carga en todas las mesas de estudio.</p>
+
+                <div class="card" style="border-top: 5px solid var(--primary);">
+                    <h3 style="color: var(--primary); display:flex; align-items:center; justify-content: center; gap:10px;">
+                        <i class="fas fa-rocket"></i> ACADÉMICO
+                    </h3>
+                    <ul class="propuesta-list">
+                        <li><i class="fas fa-check check-icon"></i> <strong>Vinculación Privada:</strong> Convenios directos con empresas líderes para pasantías sin trabas.</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Plan Moderno:</strong> Incorporación de IA, Data Science y Finanzas en todas las carreras.</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Mérito Docente:</strong> Encuestas estudiantiles vinculantes para evaluar el desempeño de profesores.</li>
+                    </ul>
                 </div>
+
             </div>
         </div>
     </section>
 
     <section id="visitas" class="section bg-dark-brand">
         <div class="container">
-            <h2 class="section-title">VISITAS ESTRATÉGICAS 2026</h2>
-            <p class="text-center" style="margin-bottom: 30px; color: #f0f0f0;">Tu carrera no termina en el aula. Te conectamos con los líderes del mercado.</p>
+            <h2 class="section-title">CONEXIÓN INDUSTRIAL</h2>
+            <p class="text-center" style="margin-bottom: 30px; color: #f0f0f0;">Tu carrera no termina en el aula. Te conectamos hoy con el mercado laboral.</p>
             
             <div class="table-wrapper">
                 <table class="agenda-table">
                     <thead>
                         <tr>
                             <th>MES</th>
-                            <th>EMPRESA / OBRA</th>
+                            <th>EMPRESA / PROYECTO</th>
                             <th>UBICACIÓN</th>
                         </tr>
                     </thead>
@@ -121,9 +198,9 @@
 
             <div class="form-container">
                 <h3 style="color: var(--accent);">ASEGURÁ TU LUGAR</h3>
-                <p>Inscripciones abiertas 15 días antes de cada visita. Requisito: Padrón y Seguro.</p>
+                <p>Las inscripciones abren 15 días antes de cada fecha. Prioridad por Padrón y Carrera.</p>
                 <a href="https://docs.google.com/forms/d/e/TU_ID_DE_FORMULARIO/viewform" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-google-drive"></i> COMPLETAR FORMULARIO
+                    <i class="fab fa-google-drive"></i> FORMULARIO DE INSCRIPCIÓN
                 </a>
             </div>
         </div>
@@ -131,24 +208,24 @@
 
     <section id="apoyo" class="section">
         <div class="container">
-            <h2 class="section-title">APOYO ACADÉMICO</h2>
-            <p class="subtitle text-center">Porque sabemos que los filtros existen. Te damos herramientas para superarlos.</p>
+            <h2 class="section-title">HERRAMIENTAS ACADÉMICAS</h2>
+            <p class="subtitle text-center">Sabemos que los filtros existen. Te damos las herramientas para superarlos por mérito propio.</p>
             
             <div class="grid-3">
                 <div class="card">
                     <i class="fas fa-book-open icon-box"></i>
                     <h3>CLASES DE REFUERZO</h3>
-                    <p>Encuentros semanales de Álgebra, Análisis y Física. Explicaciones de estudiantes para estudiantes.</p>
+                    <p>Encuentros semanales de Álgebra, Análisis y Física. Explicaciones de par a par para destrabar la cursada.</p>
                 </div>
                 <div class="card card-accent">
                     <i class="fas fa-folder-open icon-box"></i>
                     <h3>DRIVE ABIERTO</h3>
-                    <p>Acceso libre a nuestra base de datos con parciales resueltos, guías y libros PDF.</p>
+                    <p>Democratizamos el conocimiento. Acceso libre a nuestra base de datos con parciales, guías y libros PDF.</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-users icon-box"></i>
-                    <h3>COMUNIDAD</h3>
-                    <p>Grupos de WhatsApp activos por materia para consultas rápidas y estudio en equipo.</p>
+                    <h3>RED DE ESTUDIO</h3>
+                    <p>Comunidad activa en WhatsApp por materia. Consultas rápidas, resolución de dudas y armado de grupos.</p>
                 </div>
             </div>
         </div>
@@ -185,15 +262,15 @@
     <footer>
         <div class="container">
             <div class="logo-footer">
-                <img src="logo.png" alt="Logo Footer" style="height: 30px; vertical-align: middle; margin-right: 5px;"> 
+                <img src="logo.png" alt="Logo SL" style="height: 30px; vertical-align: middle; filter: brightness(0) invert(1);"> 
                 SOMOS LIBRES <span class="highlight">FIUBA</span>
             </div>
-            <p>Hacia una gestión transparente y de calidad.</p>
+            <p>Hacia una gestión profesional, transparente y libre.</p>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="https://wa.me/54911XXXXXXXX"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <p style="font-size: 0.75rem; opacity: 0.5; margin-top: 20px;">&copy; 2026 Somos Libres FIUBA.</p>
+            <p style="font-size: 0.75rem; opacity: 0.5; margin-top: 20px;">&copy; 2026 Somos Libres FIUBA. La Libertad Avanza en Ingeniería.</p>
         </div>
     </footer>
 
@@ -205,7 +282,7 @@
             navLinks.classList.toggle('active');
         });
 
-        // Cierra el menú móvil al hacer click en un enlace
+        // Cierra el menú móvil al hacer click
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
