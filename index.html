@@ -42,7 +42,7 @@
         <div class="container hero-content">
             <span class="badge">ESTUDIANTES DE INGENIERÍA</span>
             <h1>Somos Libres <span class="highlight">Ingeniería</span></h1>
-            <p>Transformando la facultad con gestión profesional, transparencia y eficiencia. No somos políticos, somos ingenieros.</p>
+            <p>Transformando la facultad con gestión profesional, transparencia y eficiencia. Optimizamos recursos, aplicamos lógica y defendemos tu libertad.</p>
             <div class="hero-btns">
                 <a href="#identidad" class="btn btn-primary">CONOCENOS</a>
                 <a href="#plan" class="btn btn-outline">PLAN DE GESTIÓN</a>
@@ -54,7 +54,7 @@
         <div class="container">
             <div class="manifesto-box">
                 <p style="font-size: 1.1rem; margin-bottom: 20px;">
-                    <strong>Somos Libres</strong> es una agrupación que busca una gestión profesional. Nos inspiran los valores de libertad y modernización.
+                    <strong>Somos Libres</strong> es una agrupación que busca una gestión profesional. Nos inspiran los valores de libertad y modernización para la FIUBA.
                 </p>
                 <div class="valores-grid">
                     <div class="valor-item"><i class="fas fa-brain"></i><br>MODERNIZACIÓN</div>
@@ -78,7 +78,7 @@
                         <li><i class="fas fa-check check-icon"></i> Pagos Digitales</li>
                     </ul>
                 </div>
-                <div class="card reveal" style="transition-delay: 0.2s;">
+                <div class="card reveal">
                     <i class="fas fa-city icon-box"></i>
                     <h3>ESPACIOS</h3>
                     <ul class="propuesta-list">
@@ -86,7 +86,7 @@
                         <li><i class="fas fa-check check-icon"></i> Aulas Modernas</li>
                     </ul>
                 </div>
-                <div class="card reveal" style="transition-delay: 0.4s;">
+                <div class="card reveal">
                     <i class="fas fa-briefcase icon-box"></i>
                     <h3>FUTURO</h3>
                     <ul class="propuesta-list">
@@ -98,44 +98,33 @@
         </div>
     </section>
 
-    <section id="visitas" class="section bg-dark-brand">
-        <div class="container">
-            <h2 class="section-title reveal">AGENDA INDUSTRIAL</h2>
-            <div class="calendar-grid reveal">
-                <div class="month-card">
-                    <div class="month-header">MARZO</div>
-                    <div class="visit-list">
-                        <div class="visit-item"><strong>YPF</strong> <small>Data Control</small></div>
-                    </div>
-                </div>
-                </div>
-        </div>
-    </section>
-
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="logo-footer">SOMOS LIBRES <span class="highlight">FIUBA</span></div>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-whatsapp"></i></a>
             </div>
+            <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.6;">&copy; 2026 Somos Libres FIUBA. La Libertad Avanza en Ingeniería.</p>
         </div>
     </footer>
 
     <script>
-        // Configuración de Animaciones Dinámicas
+        // Inicializar animaciones
         ScrollReveal().reveal('.reveal', {
             distance: '50px',
-            duration: 1000,
-            easing: 'cubic-bezier(0.5, 0, 0, 1)',
-            interval: 200,
-            origin: 'bottom'
+            duration: 800,
+            easing: 'ease-in-out',
+            origin: 'bottom',
+            interval: 150
         });
 
         // Menú Móvil
         const menuToggle = document.getElementById('mobile-menu');
         const navLinks = document.querySelector('.nav-links');
-        menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
     </script>
 </body>
 </html>
