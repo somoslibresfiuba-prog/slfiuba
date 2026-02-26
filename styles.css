@@ -1,14 +1,12 @@
-/* --- VARIABLES DE MARCA (Manual Somos Libres) --- */
+/* --- VARIABLES DE MARCA --- */
 :root {
-    --primary: #512978;        /* Violeta Oficial */
-    --accent: #FFDF12;         /* Amarillo Oficial */
-    --blue-brand: #264D7E;     /* Azul Oficial */
-    --secondary: #1a1a2e;      /* Azul noche para fondos */
-    
-    --bg-light: #f8f9fa;      
+    --primary: #512978;
+    --accent: #FFDF12;
+    --blue-brand: #264D7E;
+    --secondary: #1a1a2e;
+    --bg-light: #f8f9fa;
     --text-main: #212529;
     --text-muted: #6c757d;
-    
     --font-head: 'League Spartan', sans-serif;
     --font-body: 'Montserrat', sans-serif;
 }
@@ -22,7 +20,7 @@ body {
     background-color: white;
     color: var(--text-main);
     line-height: 1.6;
-    /* ¡IMPORTANTE! Sin overflow-x: hidden para que ScrollReveal funcione */
+    /* Eliminado overflow-x: hidden y height: 100% que rompían ScrollReveal */
 }
 
 h1, h2, h3, h4 { 
@@ -67,7 +65,7 @@ h1, h2, h3, h4 {
 
 /* --- HERO DINÁMICO --- */
 .hero {
-    /* Fondo con opacidad para que la foto de la facu se vea */
+    /* ATENCIÓN: Revisá que el archivo en tu repo de GitHub se llame EXACTAMENTE "fondo.png" (respetando mayúsculas y minúsculas) */
     background: linear-gradient(135deg, rgba(38, 77, 126, 0.6), rgba(81, 41, 120, 0.6)), 
                 url('fondo.png'); 
     background-size: cover;       
@@ -151,13 +149,20 @@ footer { background: #0f0f1a; color: #aaa; padding: 60px 0 30px; text-align: cen
     .menu-toggle { display: block; color: white; font-size: 1.5rem; cursor: pointer; }
     .nav-links { display: none; position: absolute; top: 100%; left: 0; width: 100%; flex-direction: column; background: var(--primary); padding: 20px; gap: 15px; border-bottom: 3px solid var(--accent); }
     .nav-links.active { display: flex; }
-    .hero { background-attachment: scroll; } /* Quita el parallax en móviles para que no ande trabado */
+    .hero { background-attachment: scroll; } 
     .hero h1 { font-size: 2.2rem; }
     .hero-btns { flex-direction: column; }
     .calendar-grid { grid-template-columns: 1fr 1fr; }
     .valores-grid { grid-template-columns: 1fr; }
-    .grid-3[style] { grid-template-columns: 1fr !important; } /* Arregla la sección Quiénes Somos en celulares */
 }
 @media (max-width: 480px) {
-    .calendar-grid { grid-template-columns: 1fr; } /* Un mes por fila en celulares muy chicos */
+    .calendar-grid { grid-template-columns: 1fr; }
+}
+
+/* --- FALLBACK DE SEGURIDAD PARA JS ROTO --- */
+/* Si el javascript llega a fallar o trabarse, esto fuerza a que los elementos sean visibles siempre */
+html.sr .reveal {
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: none !important;
 }
