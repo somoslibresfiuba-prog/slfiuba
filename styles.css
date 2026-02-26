@@ -17,7 +17,7 @@ body {
     background-color: white;
     color: var(--text-main);
     line-height: 1.6;
-    overflow-x: hidden;
+    /* BORRAMOS EL overflow-x PARA QUE FUNCIONEN LAS ANIMACIONES */
 }
 
 /* --- NAVBAR --- */
@@ -34,6 +34,7 @@ body {
 
 /* --- HERO DINÁMICO --- */
 .hero {
+    /* ¡OJO! Si tu imagen se llama Fondo.PNG en GitHub, tienes que ponerlo igualito aquí abajo */
     background: linear-gradient(135deg, rgba(38, 77, 126, 0.6), rgba(81, 41, 120, 0.6)), 
                 url('fondo.png'); 
     background-size: cover;
