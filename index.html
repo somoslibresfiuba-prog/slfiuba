@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700;800&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <link rel="stylesheet" href="styles.css">
@@ -33,6 +34,7 @@
                 <li><a href="#plan">Plan 2026</a></li>
                 <li><a href="#visitas">Visitas</a></li>
                 <li><a href="#apoyo">Apoyo</a></li>
+                <li><a href="#equipo">Equipo</a></li>
                 <li><a href="https://wa.me/54911XXXXXXXX" class="btn btn-primary btn-nav">Sumate</a></li>
             </ul>
         </div>
@@ -42,9 +44,9 @@
         <div class="container hero-content">
             <span class="badge">ESTUDIANTES DE INGENIERÍA</span>
             <h1>Somos Libres <span class="highlight">Ingeniería</span></h1>
-            <p>Transformando la facultad con gestión profesional, transparencia y eficiencia. Optimizamos recursos, aplicamos lógica y defendemos tu libertad.</p>
+            <p>Somos estudiantes, cansados de que el Centro de Estudiantes no funcione, espacios abandonados, falta de respuesta y mala comunicación. El comedor es un claro ejemplo, sólo aceptan efectivo y los productos son malos y caros <strong> Nuestras propuestas son simples: Transparencia, auditorías y la privatización del comedor</strong>.</p>
             <div class="hero-btns">
-                <a href="#identidad" class="btn btn-primary">CONOCENOS</a>
+                <a href="#identidad" class="btn btn-primary">CONOCÉNOS</a>
                 <a href="#plan" class="btn btn-outline">PLAN DE GESTIÓN</a>
             </div>
         </div>
@@ -52,14 +54,25 @@
 
     <section id="identidad" class="section reveal">
         <div class="container">
-            <div class="manifesto-box">
-                <p style="font-size: 1.1rem; margin-bottom: 20px;">
-                    <strong>Somos Libres</strong> es una agrupación que busca una gestión profesional. Nos inspiran los valores de libertad y modernización para la FIUBA.
-                </p>
-                <div class="valores-grid">
-                    <div class="valor-item"><i class="fas fa-brain"></i><br>MODERNIZACIÓN</div>
-                    <div class="valor-item"><i class="fas fa-search-dollar"></i><br>TRANSPARENCIA</div>
-                    <div class="valor-item"><i class="fas fa-bolt"></i><br>EFICIENCIA</div>
+            <div class="grid-3" style="grid-template-columns: 1fr 1fr; align-items: center;">
+                <div style="grid-column: span 2;">
+                    <div class="manifesto-box">
+                        <p style="font-size: 1.1rem; margin-bottom: 20px;">
+                            <strong>Somos Libres</strong> es una agrupación de estudiantes de Ingeniería que busca una mejor gestión de la facultad. Vemos a <strong>Milei</strong> como alguien que representa los valores de libertad, eficiencia y modernización que queremos para nuestra facultad. No nos interesa la política partidaria, sino aplicar estos principios para mejorar tu experiencia como estudiante.
+                        </p>
+                        <p style="margin-bottom: 20px; color: #555;">
+                            Somos <strong>liberales</strong> porque creemos que la mejor forma de gestionar la facultad es aplicando los principios de nuestra carrera: <strong>optimización de recursos, lógica basada en datos y libertad individual.</strong>
+                        </p>
+                        <p style="color: #555;">
+                            Discursos vacíos, <strong>ausencia de gestión</strong>. Nos cansamos de ver cómo se caen los techos o fallan los servicios básicos mientras el Centro de Estudiantes brilla por su ausencia. Venimos a dar <strong>soluciones reales</strong>.
+                        </p>
+
+                        <div class="valores-grid">
+                            <div class="valor-item"><i class="fas fa-brain" style="display:block; margin-bottom:5px; color:var(--accent);"></i> MODERNIZACIÓN</div>
+                            <div class="valor-item"><i class="fas fa-search-dollar" style="display:block; margin-bottom:5px; color:var(--accent);"></i> TRANSPARENCIA</div>
+                            <div class="valor-item"><i class="fas fa-bolt" style="display:block; margin-bottom:5px; color:var(--accent);"></i> EFICIENCIA</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,62 +81,161 @@
     <section id="plan" class="section bg-light">
         <div class="container">
             <h2 class="section-title reveal">PLAN DE GESTIÓN 2026</h2>
+            <p class="subtitle text-center reveal">Soluciones reales a problemas diarios.</p>
+            
             <div class="grid-3">
-                <div class="card reveal">
-                    <i class="fas fa-wallet icon-box"></i>
-                    <h3>SERVICIOS</h3>
+                <div class="card reveal" style="border-top: 5px solid var(--accent);">
+                    <h3 style="color: var(--primary); display:flex; align-items:center; justify-content: center; gap:10px;">
+                        <i class="fas fa-wallet"></i> SERVICIOS
+                    </h3>
                     <ul class="propuesta-list">
-                        <li><i class="fas fa-check check-icon"></i> Comedor Privado</li>
-                        <li><i class="fas fa-check check-icon"></i> Kioskos Activos</li>
-                        <li><i class="fas fa-check check-icon"></i> Pagos Digitales</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Comedor:</strong> El comedor es administrado por el centro de estudiantes, queremos que pase a manos de un privado, para que hayan mejores comidas y precios más competitivos. </li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Kioskos:</strong> Antes de la pandemia existian kioskos que ofrecian alternativas a los comedores de la facultad. Buscamos que vuelvan, generando mayor competencia y horarios más extendidos.</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Transparencia:</strong> Basta de "todo en negro". Exigimos tickets y transparencia en cada compra.</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Pagos Digitales:</strong> Implementación obligatoria de Mercado Pago y QR en fotocopiadora y buffet.</li>
                     </ul>
                 </div>
-                <div class="card reveal">
-                    <i class="fas fa-city icon-box"></i>
-                    <h3>ESPACIOS</h3>
+
+                <div class="card reveal" style="border-top: 5px solid var(--blue-brand);">
+                    <h3 style="color: var(--blue-brand); display:flex; align-items:center; justify-content: center; gap:10px;">
+                        <i class="fas fa-city"></i> ESPACIOS
+                    </h3>
                     <ul class="propuesta-list">
-                        <li><i class="fas fa-check check-icon"></i> Terrazas Abiertas</li>
-                        <li><i class="fas fa-check check-icon"></i> Aulas Modernas</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Terrazas:</strong> Recuperación de las terrazas que están hoy en desuso. Queremos abrirlas para crear espacios de esparcimiento y estudio.</li>
+                         <li><i class="fas fa-check check-icon"></i> <strong>Aulas:</strong> Mejora de aulas y mobiliarios, queremos que las instalaciones sean modernas y funcionales.</li>
                     </ul>
                 </div>
-                <div class="card reveal">
-                    <i class="fas fa-briefcase icon-box"></i>
-                    <h3>FUTURO</h3>
+
+                <div class="card reveal" style="border-top: 5px solid var(--primary);">
+                    <h3 style="color: var(--primary); display:flex; align-items:center; justify-content: center; gap:10px;">
+                        <i class="fas fa-briefcase"></i> FUTURO
+                    </h3>
                     <ul class="propuesta-list">
-                        <li><i class="fas fa-check check-icon"></i> Inserción Laboral</li>
-                        <li><i class="fas fa-check check-icon"></i> Clases de Apoyo</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Inserción Laboral:</strong> Creación de vínculos reales con el sector privado para potenciar pasantías y bolsas de trabajo.</li>
+                        <li><i class="fas fa-check check-icon"></i> <strong>Clases de Apoyo:</strong> Mediante los recursos del comedor, se contrataran docentes para dar clases de apoyo. También se buscarán estudiantes que ya hayan pasado por las materias para orientarte.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <section id="visitas" class="section bg-dark-brand">
         <div class="container">
-            <div class="logo-footer">SOMOS LIBRES <span class="highlight">FIUBA</span></div>
+            <h2 class="section-title reveal">AGENDA INDUSTRIAL 2026</h2>
+            <p class="text-center reveal" style="margin-bottom: 40px; color: #f0f0f0;">
+                Tu carrera no termina en el aula. Cronograma de visitas confirmadas.
+            </p>
+            
+            <div class="calendar-grid reveal">
+                <div class="month-card"><div class="month-header">MARZO</div><div class="visit-list"><div class="visit-item"><strong>YPF</strong> <small>Data Control (Pto Madero)</small></div><div class="visit-item"><strong>MERCADO LIBRE</strong> <small>HQ Saavedra</small></div></div></div>
+                <div class="month-card"><div class="month-header">ABRIL</div><div class="visit-list"><div class="visit-item"><strong>AEROLÍNEAS</strong> <small>Hangares Ezeiza</small></div><div class="visit-item"><strong>GLOBANT</strong> <small>Global HQ (Retiro)</small></div></div></div>
+                <div class="month-card"><div class="month-header">MAYO</div><div class="visit-list"><div class="visit-item"><strong>AYSA</strong> <small>Obra Hídrica (San Martín)</small></div></div></div>
+                <div class="month-card"><div class="month-header">JUNIO</div><div class="visit-list"><div class="visit-item"><strong>TOYOTA</strong> <small>Planta Industrial (Pacheco)</small></div></div></div>
+                <div class="month-card"><div class="month-header">JULIO</div><div class="visit-list"><div class="visit-item"><strong>TGS</strong> <small>Centro Control (Belgrano)</small></div></div></div>
+                <div class="month-card"><div class="month-header">AGOSTO</div><div class="visit-list"><div class="visit-item"><strong>SACDE</strong> <small>Infraestructura (A designar)</small></div></div></div>
+                <div class="month-card"><div class="month-header">SEPTIEMBRE</div><div class="visit-list"><div class="visit-item"><strong>IBM</strong> <small>Innovation Center (Olivos)</small></div><div class="visit-item"><strong>RIVER PLATE</strong> <small>Ing. Estructural (Núñez)</small></div></div></div>
+                <div class="month-card"><div class="month-header">OCTUBRE</div><div class="visit-list"><div class="visit-item"><strong>CNEA</strong> <small>Centro Atómico (Const.)</small></div><div class="visit-item"><strong>YPF</strong> <small>Refinería (La Plata)</small></div></div></div>
+            </div>
+
+            <div class="form-container reveal" style="padding: 20px; margin-top: 30px; text-align: center;">
+                <p style="font-size: 0.9rem; margin-bottom: 15px; color: white;">Cupos limitados. Prioridad por Padrón.</p>
+                <a href="https://docs.google.com/forms/d/e/TU_ID_DE_FORMULARIO/viewform" target="_blank" class="btn btn-primary btn-nav">
+                    INSCRIBIRME
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="apoyo" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">HERRAMIENTAS ACADÉMICAS</h2>
+            <p class="subtitle text-center reveal">Sabemos que la cursada es complicada. Te damos las herramientas para superarlos por mérito propio.</p>
+            
+            <div class="grid-3">
+                <div class="card reveal">
+                    <i class="fas fa-seedling icon-box"></i>
+                    <h3>INGRESO / CBC</h3>
+                    <p>Arrancá con una base sólida. Clases de refuerzo en <strong>Python, Análisis Matemático, Álgebra y Física</strong>.</p>
+                </div>
+                <div class="card card-accent reveal" style="border-top: 5px solid var(--accent);">
+                    <i class="fas fa-layer-group icon-box"></i>
+                    <h3>MATERIAS DE CARRERA</h3>
+                    <p>Que no te traben las básicas. Apoyo semanal en <strong>Análisis II, Álgebra II, Química y Física (FSP)</strong>.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="fas fa-folder-open icon-box"></i>
+                    <h3>DRIVE Y COMUNIDAD</h3>
+                    <p>Democratizamos el estudio. Acceso libre a parciales, guías y libros PDF, más grupos de WhatsApp para estudiar en equipo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title reveal">EL EQUIPO</h2>
+            <div class="team-grid reveal">
+                <div class="team-member">
+                    <h4>David Maciel</h4>
+                    <p class="role">Coordinación General</p>
+                    <p class="career">Ing. Civil</p>
+                </div>
+                <div class="team-member">
+                    <h4>Santiago Durantini</h4>
+                    <p class="role">Relaciones Institucionales</p>
+                    <p class="career">Ing. Industrial</p>
+                </div>
+                <div class="team-member">
+                    <h4>Ivan Castelnuovo</h4>
+                    <p class="role">Comunicación</p>
+                    <p class="career">ICC</p>
+                </div>
+                <div class="team-member">
+                    <h4>Elian Acuña</h4>
+                    <p class="role">Acción Territorial</p>
+                    <p class="career">Ingeniería</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo-footer">
+                <img src="logo.png" alt="Logo SL" style="height: 30px; vertical-align: middle; filter: brightness(0) invert(1);"> 
+                SOMOS LIBRES <span class="highlight">FIUBA</span>
+            </div>
+            <p>Hacia una gestión profesional, transparente y libre.</p>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://wa.me/54911XXXXXXXX"><i class="fab fa-whatsapp"></i></a>
             </div>
-            <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.6;">&copy; 2026 Somos Libres FIUBA. La Libertad Avanza en Ingeniería.</p>
+            <p style="font-size: 0.75rem; opacity: 0.5; margin-top: 20px;">&copy; 2026 Somos Libres FIUBA. La Libertad Avanza en Ingeniería.</p>
         </div>
     </footer>
 
     <script>
-        // Inicializar animaciones
+        // Animaciones dinámicas
         ScrollReveal().reveal('.reveal', {
             distance: '50px',
             duration: 800,
             easing: 'ease-in-out',
             origin: 'bottom',
-            interval: 150
+            interval: 100
         });
 
         // Menú Móvil
         const menuToggle = document.getElementById('mobile-menu');
         const navLinks = document.querySelector('.nav-links');
+        
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
         });
     </script>
 </body>
